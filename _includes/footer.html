@@ -1,0 +1,51 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+<!--    <h2 class="footer-heading">{{ site.title }}</h2> --!>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>{{ site.title }}</li>
+          <li><a href=https://github.com/chriscl/chriscl.github.io>View website source on GitHub!</li>
+          {% if site.email %} <li><a href="mailto:{{ site.email }}">{{ @: site.email }}</a></li> {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            <a href="https://github.com/{{ site.github_username }}">
+
+              <span class="icon  icon--github">
+                <img width="20px" height="20px" src="/assets/images/github-solarized.svg" alt="GitHub: ">
+              </span>
+              <span class="username">{{ site.github_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.linkedin_username %}
+          <li>
+            <a href="http://au.linkedin.com/pub/chris-claoue-long/87/189/259">
+              <span class="icon  icon--linkedin">
+                <img width="20px" height="20px" src="/assets/images/linkedin-solarized.svg" alt="LinkedIn: ">
+              </span>
+              <span class="username">{{ site.linkedin_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">{{ site.description }}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>

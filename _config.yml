@@ -1,0 +1,24 @@
+title: Ghost In The Noise
+
+description: > # this means to ignore newlines until "baseurl:"
+    Another website about life, the universe and everything, a small signal flickering through the noise of the electronic world.
+
+url: "https://chriscl.github.io" # the base hostname & protocol for the site
+paginate: 10
+
+# Build settings
+markdown: redcarpet
+redcarpet:
+ extensions: ["smart", "no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "superscript"]
+
+# GitHub and site settings
+highlighter: pygments
+safe: true
+lsi: false
+gems:
+  - jekyll-sitemap
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+
+# social links
+github_username:  chriscl
+linkedin_username: Chris CL

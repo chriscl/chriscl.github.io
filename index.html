@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="home">
+
+    <p>
+    Eh? Someone there?  Oh, I see I've been discovered!  Welcome, mysterious entity, to my little corner of the web.  Here you will find a log of my various musings, and perhaps something useful as well!
+    </p>
+    <p>
+    A lot of what I have to write about has probably been covered by others before, but that is the way with these things -- there is so much information out there now, that it all gets lost in the noise...
+    </p>
+
+    <h1 class="page-heading">See what I've been writing about...</h1>
+
+    <ul class="post-list">
+        {% for post in site.posts %}
+            <li>
+                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <h2>
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <p class="rss-subscribe"> <a href="{{ "/feed.xml" | prepend: site.baseurl }}">subscribe via RSS</a></p>
+
+</div>
